@@ -1,0 +1,22 @@
+pipeline:
+  name: demo-15
+  identifier: demo15
+  projectIdentifier: demo
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: vdf
+        identifier: vdf
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+        tags: {}
